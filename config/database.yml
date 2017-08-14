@@ -9,3 +9,6 @@ default: &default
 development:
   <<: *default
   database: chrome-extention-test
+
+production: 
+  url: <%= ENV['DATABASE_URL'] %>
